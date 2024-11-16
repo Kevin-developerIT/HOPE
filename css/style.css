@@ -28,9 +28,6 @@ body, html {
     
   }
 
-
-
-
   #hero {
     height: 50vh;
     overflow: hidden;
@@ -159,8 +156,6 @@ body, html {
     background-color: #000;
     color: #fff;
 }
-
-
 
 
 #contact {
