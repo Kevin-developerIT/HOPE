@@ -119,6 +119,9 @@ body, html {
     margin-top: 1rem;
 }
 
+#jaecoo {
+    margin-top: 25px;
+}
 
 
 #clients {
@@ -131,6 +134,7 @@ body, html {
     border-radius: 0.5rem;
     background-color: #222;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 .client-card img {
     width: 100%;
@@ -148,6 +152,7 @@ body, html {
 }
 .client-content h3 {
     margin-top: 1rem;
+    color: #f8f9fa;
 }
 
 
@@ -188,4 +193,42 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contenido-medios {
+    display: none;
+    margin-top: 10px;
+}
+
+.contenido-medios ul{
+    list-style-type: none;
+    padding-left: 0;
+    column-count: 2; /* Divide la lista en 3 columnas */
+    column-gap: 20px; /* Espacio entre las columnas */
+}
+
+.contenido-medios ul h5{
+    color: #f8f9fa;
+}
+
+.contenido-Uni {
+    display: none;
+    margin-top: 10px;
+}
+
+.contenido-Uni ul{
+    list-style-type: none;
+    padding: 0;
+    column-count: 6; /* Divide la lista en 3 columnas */
+    column-gap: 20px; /* Espacio entre las columnas */
+}
+
+.contenido-Uni ul h5{
+    color: #f8f9fa;
+}
+
+
+.contenido-Uni p {
+    margin-bottom: 4px;
+    font-size: 12px;
 }

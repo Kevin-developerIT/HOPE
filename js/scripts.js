@@ -11,8 +11,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-
-
 let lastScrollTop = 0; // Valor de desplazamiento inicial
 const navbar = document.getElementById('navbar'); // Obtiene la navbar por su ID
 
@@ -27,6 +25,24 @@ window.addEventListener('scroll', function() {
   lastScrollTop = scrollTop;
 });
 
+
+function expandirMedios() {
+  var contenido = document.getElementById("contenidoMedios");
+  if (contenido.style.display === "none" || contenido.style.display === "") {
+      contenido.style.display = "grid";
+  } else {
+      contenido.style.display = "none";
+  }
+}
+
+function expandirUni() {
+  var contenido = document.getElementById("contenidoUni");
+  if (contenido.style.display === "none" || contenido.style.display === "") {
+      contenido.style.display = "grid";
+  } else {
+      contenido.style.display = "none";
+  }
+}
 
 
 
