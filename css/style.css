@@ -138,14 +138,10 @@ body, html {
 }
 .client-card img {
     width: 100%;
-    transition: transform 0.3s ease;
 }
 .client-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-}
-.client-card:hover img {
-    transform: scale(1.1);
 }
 .client-content {
     padding: 1.5rem;
@@ -203,12 +199,61 @@ footer{
 .contenido-medios ul{
     list-style-type: none;
     padding-left: 0;
-    column-count: 2; /* Divide la lista en 3 columnas */
+    column-count: 5; /* Divide la lista en 3 columnas */
+}
+
+.contenido-medios ul h6{
+    color: #f8f9fa;
+    margin-top: 5px;
+}
+
+.contenido-CC {
+    display: none;
+    margin-top: 10px;
+}
+
+.contenido-CC ul{
+    list-style-type: none;
+    padding: 0;
+    column-count: 6; /* Divide la lista en 3 columnas */
     column-gap: 20px; /* Espacio entre las columnas */
 }
 
-.contenido-medios ul h5{
+.contenido-CC ul h6{
     color: #f8f9fa;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+
+.contenido-CC p {
+    margin-bottom: 2px;
+    font-size: 11px;
+}
+
+.client-card-medios {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-color: #222;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+.img-medios {
+    width: 100%;
+}
+.client-card-medios:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.lista-medios img {
+    width: 75%;
+    transition: transform 0.3s ease;
+}
+
+.lista-medios:hover img {
+    transform: scale(1.04);
 }
 
 .contenido-Uni {
@@ -216,19 +261,22 @@ footer{
     margin-top: 10px;
 }
 
+.contenido-Uni img {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .contenido-Uni ul{
     list-style-type: none;
     padding: 0;
-    column-count: 6; /* Divide la lista en 3 columnas */
+    column-count: 5; /* Divide la lista en 3 columnas */
     column-gap: 20px; /* Espacio entre las columnas */
-}
-
-.contenido-Uni ul h5{
-    color: #f8f9fa;
 }
 
 
 .contenido-Uni p {
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     font-size: 12px;
+    color: #f8f9fa;
 }

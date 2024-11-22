@@ -35,6 +35,15 @@ function expandirMedios() {
   }
 }
 
+function expandirCC() {
+  var contenido = document.getElementById("contenidoCC");
+  if (contenido.style.display === "none" || contenido.style.display === "") {
+      contenido.style.display = "grid";
+  } else {
+      contenido.style.display = "none";
+  }
+}
+
 function expandirUni() {
   var contenido = document.getElementById("contenidoUni");
   if (contenido.style.display === "none" || contenido.style.display === "") {
@@ -43,8 +52,6 @@ function expandirUni() {
       contenido.style.display = "none";
   }
 }
-
-
 
 
  
