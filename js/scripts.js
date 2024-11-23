@@ -29,7 +29,7 @@ window.addEventListener('scroll', function() {
 function expandirMedios() {
   var contenido = document.getElementById("contenidoMedios");
   if (contenido.style.display === "none" || contenido.style.display === "") {
-      contenido.style.display = "grid";
+      contenido.style.display = "flex";
   } else {
       contenido.style.display = "none";
   }
@@ -53,6 +53,13 @@ function expandirUni() {
   }
 }
 
-
+function expandirPlata() {
+  var contenido = document.getElementById("contenidoPlata");
+  if (contenido.style.display === "none" || contenido.style.display === "") {
+      contenido.style.display = "flex";
+  } else {
+      contenido.style.display = "none";
+  }
+}
  
 
